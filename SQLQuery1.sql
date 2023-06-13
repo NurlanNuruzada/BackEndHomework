@@ -40,9 +40,9 @@ VALUES ( 'Nurlan', 'Nuruzada', 1, 1, 3434.00),
 
 
 SELECT first_name, last_name, Departments.name Department_Name ,Position_Name ,salary FROM Employees 
-LEFT JOIN Positions
+ JOIN Positions
 ON Employees.Position_Id = Positions.Id
-LEFT JOIN Departments
+ JOIN Departments
 ON Employees.Department_Id = Departments.Id
 
 
